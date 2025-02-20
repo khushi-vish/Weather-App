@@ -38,6 +38,7 @@ export default function Search({ updateInfo }) {
 
   let handleSubmit = (e) => {
     try {
+      setError(false);
       e.preventDefault();
       setCity("");
       getWhether();
